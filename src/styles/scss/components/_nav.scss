@@ -1,0 +1,36 @@
+.nav {
+  $spacing: 10px;
+  
+  padding: 20px;
+  background: #222;
+
+  &--logo {
+    display: block;
+    font-family: $font-head;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #eee;
+    margin-bottom: $spacing;
+  }
+
+  &--links {
+    &--list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: $spacing;
+    }
+    &--item {}
+    &--link {
+      color: #eee;
+      text-transform: uppercase;
+      cursor: pointer;
+      opacity: .7;
+      font-size: 13px;
+      &:hover,
+      &.active {
+        color: gold;
+        opacity: 1;
+      }
+    }
+  }
+}
