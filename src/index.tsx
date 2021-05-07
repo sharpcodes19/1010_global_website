@@ -1,6 +1,8 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+// import ReactDOM from 'react-dom'
 import { IconContext } from 'react-icons'
+import { render } from 'react-snapshot'
+
 import App from './app'
 import reportWebVitals from './reportWebVitals'
 
@@ -8,7 +10,7 @@ import 'react-alice-carousel/lib/alice-carousel.css'
 import './styles/css/index.min.css'
 
 
-ReactDOM.render(
+render(
   <React.StrictMode>
     <IconContext.Provider value = {{ className: 'icon' }}>
       <App />
