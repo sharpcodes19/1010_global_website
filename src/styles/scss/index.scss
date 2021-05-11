@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400&family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Girassol&family=Montserrat&display=swap');
 
 @import './variables';
 @import './reset';
 
-@import './components/nav';
-@import './components/slider';
-
-@import './sections/game';
-@import './sections/news';
+@import '../../app/nav/style';
+@import '../../app/home/style';
+@import '../../app/services/style';
+@import '../../app/games/style';
+@import '../../app/news/style';

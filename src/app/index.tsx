@@ -1,24 +1,34 @@
 import React from 'react'
+import { Helmet, HelmetProvider } from 'react-helmet-async'
 
-import Navigation from './components/nav'
-import Slide1 from '../assets/images/slides/1.jpg'
-import Slider from './components/slider'
-import GameSection from './sections/game'
-import NewsSection from './sections/news'
+import Logo from '../assets/images/logo.png'
+import AboutUs from './about-us'
+import Games from './games'
+import HomePage from './home'
+import Navigation from './nav'
+import News from './news'
+import Services from './services'
 
 const App: React.FC <Params> = (params) => {
-
-  const sliderImages: Array <any> = [ Slide1, Slide1 ]
-
   return (
-    <>
+    <HelmetProvider>
+      <Helmet
+        title = '1010 Global Ventures Inc.'
+        link = {[
+          {
+            rel: 'icon',
+            type: 'image/png',
+            href: Logo
+          }
+        ]}
+      />
       <Navigation />
-      <Slider sources = { sliderImages } />
-      <main>
-        <GameSection />
-        <NewsSection />
-      </main>
-    </>
+      <HomePage />
+      <Services />
+      <Games />
+      <News />
+      <AboutUs />
+    </HelmetProvider>
   )
 }
 

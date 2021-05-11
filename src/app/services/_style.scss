@@ -1,0 +1,50 @@
+.services {
+  padding: 250px 30px 30px 30px;
+  max-width: 1200px;
+  margin: 2rem auto;
+  min-height: 100vh;
+
+  & > .top {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 768px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    span {
+      color: #333;
+    }
+    .title {
+      font-family: $font-head;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+    p {
+      line-height: 2;
+    }
+  }
+  & > .mid {
+    text-align: center;
+    ul {
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      li {
+        max-width: 360px;
+        padding: 20px;
+        img {
+          width: 120px;
+          height: 120px;
+          margin-bottom: 2rem;
+        }
+        p {
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+  & > .bot {}
+
+}
