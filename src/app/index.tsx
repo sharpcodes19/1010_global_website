@@ -3,6 +3,8 @@ import { Helmet, HelmetProvider } from 'react-helmet-async'
 
 import Logo from '../assets/images/logo.png'
 import AboutUs from './about-us'
+import ContactUs from './contact-us'
+import Footer from './footer'
 import Games from './games'
 import HomePage from './home'
 import Navigation from './nav'
@@ -28,6 +30,8 @@ const App: React.FC <Params> = (params) => {
       <Games />
       <News />
       <AboutUs />
+      <ContactUs />
+      <Footer />
     </HelmetProvider>
   )
 }

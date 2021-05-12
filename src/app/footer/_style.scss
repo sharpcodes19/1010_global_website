@@ -1,0 +1,40 @@
+footer {
+  padding: 40px;
+  min-height: 20vh;
+  background: #262626;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  & > .top {
+    max-width: 480px;
+    margin: 0 auto;
+    width: 100%;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      gap: 25px;
+      li {
+        text-align: center;
+        color: #eee;
+        .icon {
+          font-size: 23px !important;
+        }
+        span {
+          display: block;
+          font-size: 11px;
+        }
+      }
+    }
+  }
+  & > .mid {}
+  & > .bot {
+    margin-top: 3rem;
+    p {
+      color: #aaa;
+      font-size: 10px;  
+      text-align: center;
+    }
+  }
+}

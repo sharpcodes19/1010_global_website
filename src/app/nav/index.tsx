@@ -42,6 +42,9 @@ const Navigation: React.FC <Params> = (params) => {
           items.map ((item: Props, i: number) => {
             return <li key = { i }>
               <Link
+                offset = { 250 }
+                ignoreCancelEvents
+                smooth spy
                 activeClass = 'active'
                 to = { item.to }>{ item.text }</Link>
             </li>
