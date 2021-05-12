@@ -15,12 +15,12 @@ const Navigation: React.FC <Params> = (params) => {
       to: 'games'
     },
     {
-      text: 'News',
-      to: 'news'
-    },
-    {
       text: 'Services',
       to: 'services'
+    },
+    {
+      text: 'News',
+      to: 'news'
     },
     {
       text: 'About Us',
@@ -42,7 +42,7 @@ const Navigation: React.FC <Params> = (params) => {
           items.map ((item: Props, i: number) => {
             return <li key = { i }>
               <Link
-                offset = { 250 }
+                offset = { -150 }
                 ignoreCancelEvents
                 smooth spy
                 activeClass = 'active'

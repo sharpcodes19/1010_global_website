@@ -1,7 +1,6 @@
 import React from 'react'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 
-import Logo from '../assets/images/logo.png'
 import AboutUs from './about-us'
 import ContactUs from './contact-us'
 import Footer from './footer'
@@ -16,18 +15,11 @@ const App: React.FC <Params> = (params) => {
     <HelmetProvider>
       <Helmet
         title = '1010 Global Ventures Inc.'
-        link = {[
-          {
-            rel: 'icon',
-            type: 'image/png',
-            href: Logo
-          }
-        ]}
       />
       <Navigation />
       <HomePage />
-      <Services />
       <Games />
+      <Services />
       <News />
       <AboutUs />
       <ContactUs />
